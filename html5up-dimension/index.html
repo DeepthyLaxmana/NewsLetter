@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			
+			
+.image-container {
+  background-image: url("images/1.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 1vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+			.danger {
+			  background-color: #ffdddd;
+			  border-left: 6px solid #f44336;
+			  color: black;
+			}
+			
+			.success {
+			  background-color: #ddffdd;
+			  border-left: 6px solid #4CAF50;
+			  color: black;
+			}
+			
+			.info {
+			  background-color: #e7f3fe;
+			  border-left: 6px solid #2196F3;
+			  color: black;
+			}
+			
+			
+			.warning {
+			  background-color: #ffffcc;
+			  border-left: 6px solid #ffeb3b;
+			  color: black;
+			}
+			</style>
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			
+			
+			
+			/* The grid: Four equal columns that floats next to each other */
+			.column {
+			  float: left;
+			  width: 25%;
+			  padding: 10px;
+			}
+			
+			/* Style the images inside the grid */
+			.column img {
+			  opacity: 0.8; 
+			  cursor: pointer; 
+			}
+			
+			.column img:hover {
+			  opacity: 1;
+			}
+			
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			
+			/* The expanding image container */
+			.container {
+			  position: relative;
+			  display: none;
+			}
+			
+			/* Expanding image text */
+			#imgtext {
+			  position: absolute;
+			  bottom: 15px;
+			  left: 15px;
+			  color: white;
+			  font-size: 20px;
+			}
+			
+			/* Closable button inside the expanded image */
+			.closebtn {
+			  position: absolute;
+			  top: 10px;
+			  right: 15px;
+			  color: white;
+			  font-size: 35px;
+			  cursor: pointer;
+			}
+			</style>
+<script>
+	function myFunction(imgs) {
+	  var expandImg = document.getElementById("expandedImg");
+	  var imgText = document.getElementById("imgtext");
+	  expandImg.src = imgs.src;
+	  imgText.innerHTML = imgs.alt;
+	  expandImg.parentElement.style.display = "block";
+	}
+	</script>
+	</head>
+	<body class="is-preload">
+
+		
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				
+				<!-- Header -->
+					<header id="header">
+						
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								
+								<h1>SAMS/CAS/CIS</h1>
+								<p>Q1 & Q2 Newsletter</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Pam's Message</a></li>
+								<li><a href="#work">In the News</a></li>
+								<li><a href="#about">Organizational Updates</a></li>
+								<li><a href="#contact">Client Success Stories & Wins</a></li>
+								<li><a href="#elements">Client Satisfaction Corner</a></li>
+								<li><a>Awards & Accolades</a></li>
+								<li><a>Celebrations</a></li>
+								<li><a>My COVID-19 Story</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Pam's message</h2>
+								<span class="image main"><img src="images/pam.jpg" alt="" /></span>
+								<p>
+									It is my pleasure to present the Soarian AMS, CAS and Client Support Q1 & Q2 2020 Newsletter. The publication of the newsletter was put 
+on hold at the end of teh first quarter as we were in the very begining stages of the COVID-19 pandemic. Little did we know what we were all in store
+for... we were attempting to navigate everyone working at home, trying to find balance between work/home life and some sort of normalcy, enduring the fear and 
+uncertainty of potentially contracting the virus, and working diligently to helo our clients stay ahead of the pending insurmountable 
+impacts of this awful virus. The term 'Unprecedented Times' doesn't seem quite accurate enough. Please take a few minutes and review all of the 
+great information provided herein. This publication is dedicated to each and every one of who has done a tremendous job over the past 2 
+quaters adjusting to our 'new normal' and navigating any/all challenges you faced, be they personal or professional. enjoy the read!
+								</br></br>
+Thank you for everything you do for Cerner and our clients!</br></br>
+Best,</br>
+Pam
+								</p>
+
+								</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">In the News</h2>
+								
+  
+  <!-- The four columns -->
+  <div class="row">
+	<div class="column">
+	  <img src="images/Idea.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+	</div>
+	<div class="column">
+	  <img src="images/Idea.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+	</div>
+	<div class="column">
+	  <img src="images/Idea.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+	</div>
+	<div class="column">
+	  <img src="images/Idea.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+	</div>
+  </div>
+  
+  <div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg" style="width:100%">
+	<div id="imgtext"></div>
+  </div>
+				</article>					
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Organizational Updates</h2>
+								<h2>SAMS</h2>
+								
+Welcome Saima Sultana (new hire – Penn State grad) who joined the AMS team in March!  
+							</br>
+
+</br>
+Peconic Bay went live Jan 6th 2020 with AMS service.  Bruce Pawling is AMS SSO. 
+</br>
+
+</br>
+Onboarded two OpenLink Millennium clients  KTCH_CD (Canada) and Ministry of health (Dubai)  
+
+</br>
+</br>
+Q2 – Thanks to Patti Primavera for covering SSO duties at Ingalls.  Ingalls IT VP reached out to the SAMS team requesting PTO coverage for their director of applications.  Patti stepped up to provide 3 weeks of escalation coverage during the director's PTO. 
+
+</br>
+
+Millennium AMS transition activities have been kicked off at VDBH_VA.  Planned live date is 8/25/2020. 
+</br></br>
+<h2>CAS</h2>
+From: Glaros,Keith <Keith.Glaros@Cerner.com>  
+</br></br>
+  
+Some good news on a holiday weekend.  Palisades signed a 1 year CAS extension for continued INVISION support.  This agreement will go through 3/31/2021.  Thank you to all that support this client.  Without the continued great work that you do, this would not have been possible.  Special thanks to Bruce Pawling for getting this one over the finish line. 
+</br>
+  
+</br>
+San Mateo's Psychiatric Emergency Services (PES) unit will be converting from paper and pencil to electronic documentation using Soarian Clinicals. PROD go live scheduled for 7/7/2020.  The following solutions are being implemented and or updated:  10 new custom PES assessments, PES Patient Story Clinical Summary, PES orders, PES reports including a new custom report for discharge teaching and referral, Discharge Workflow, and PES documentation in DM.  San Mateo Cerner team includes Alison, Joe, Hazelle, Vishrutha & Beth. 
+</br></br>
+
+
+Q2 – Associates from CAS and Soarian AMS will be teaming up to provide Soarian Clinical support at Weirton.  On-site resource (Steve Letart) is retiring at the beginning of July.  Teri Bechtel will be assigned to Weirton for 75% of her time.  In addition, Faith Thompson will be assigned 25% of her time to cover full need.  In addition, Faith will be traveling to Weirton once a week to provide some on-site presence. 
+
+</br>
+
+Westchester is now live with Clarvia.  Millennium AMS transition activities have begun in preparation for 10/17 Millennium Clinicals conversion.  Westchester will continue to be supported by CAS for INVISION rev cycle through 2026. 
+</br></br>
+<h2>CIS</h2>
+Northwell was upgraded to Soarian Financials 4.2.500 on 4/26/2020 
+</br>
+</br>
+Fresenius went live on SC 4.3.200 on May 17th. 
+</br>
+</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Client Success Stories & Wins</h2>
+								
+<div class="danger">
+  <p>Received high praise from Peconic during SSO quarterly report out “AMS is best investment we ever made”
+  </br>
+	Collaborated with Ballad Health to resolve patient safety concerns within the clients MED/IV processes by expediting several complex configuration changes across the clients system. 
+</br>
+	Including above and beyond assistance with scoping/validation and overtime..</p>
+</div>
+<div class="success">
+	<p>
+		Peconic Bay, live since 6/6/2020 is thrilled with the AMS service.  Dena Tripodo, Peconic Director of Applications, “AMS is absolutely phenomenal.  We are finally getting our backlog resolved, and we are really happy. 
+	</p>
+</div>
+<div class="info">
+	<p>
+		SF/S2 - Northwell went live on 4/26/2020. Post live they experienced a Scheduling performance issue.  Support/CWx/IP collaborated to inactivate millions of Rules rows.  Client was pleased with work effort.
+	</p>
+</div>
+<div class="warning">
+	<p>
+		Responded to COVID-19 challenges with above & beyond focus - expedited implementation of Critical Care beds (waiving license fees) for NWH and Ballad in 4 days which is typically a 6 week  install. AMS, Consulting, CIS-CS, Legal, and Contract Management worked together. 
+	</br>
+		Below is what clients had to say:
+	</br>
+		“Ballad thanks you for all you did to get us up and running.  It takes a village to get this crisis related needed work done. Your help in making access available a few hours before doors opened was phenomenal.  The CNO for that facility breathed a sigh of relief that this was one less thing off her list to worry about.   You guys rock.”
+	</br>
+		I wanted to thank you and yours for exception work and collaboration about helping make our Cerner Soarian instance ready for our COVID19 patient care. The Cerner all joined together and accomplished great and collaborative work in short time line while balancing any number of other clients’ needs at the same time. On behalf of UWMC Northwest, please accept our thanks.
+	</p>
+</div>
+<div class="danger">
+	<p>
+		Healthcare Intelligence - High profile client Northwell was upgraded to Soarian Financials 4.2.500 on 4/26/20. The upgrade was very successful with limited reported problems. All client reported issues have been resolved and root cause provided to client.
+	</p>
+</div>
+<div class="danger">
+	<p>
+		Fresenius went live on SC 4.3.200 on May 17th.  The client had experienced some performance issues within Messaging Services. Members of Soarian Clinical Common Component team and OPENLink  Application team worked with the client during Memorial Day Weekend  to make modifications to their Messaging Services designs in their environments.  This team effort between Common Components, OPENLink, and the client, was completed quickly and successfully.  Great job!
+	</p>
+</div>
+<div class="danger">
+	<p>
+		Invision – At the height of the COVID-19 pandemic, Northwell was scrambling to meet state mandates to increase bed capacity by 40% across campuses. This also required the beds to be quickly added to the Invision PA system. The Invision team responded to dozens of requests, many over weekends, to create 1,700+ beds across the 24 sites. The bed capacity increase is highlighted on the Northwell web site. We received multiple testimonials from the client for this effort.
+	</p>
+</div>
+<div class="info">
+	<p>
+		A message from Keith Glaros:
+	</br>
+		I wanted to share a thank you note from Westchester’s CMIO.  The CAS team responded remarkably to all Covid-19 incidents and configuration requests.  CAS worked tirelessly to meet the client’s needs.  Thank you for the overnight worksessions, weekend builds, and answering your phones at any point during the day.  Some of our high visibility projects are listed in Dr. Chasin’s email (adding over 100 beds, increased bed capacity, INVISION set up for Covid tent). 
+	</br>
+		Other accomplishments include:
+	</br>
+		Daily Covid reporting distribution
+		Several patient safety configurations completed
+		Special processing for Hydroxychloroquine and Chloroquine
+		Alerts for respiratory inhalation meds
+		New quick reg pathways for Covid-19 patients
+		Mass cancellations in scheduling system (then re-adding scheduling templates once outpatient services were re-opened)
+		New ordering pathway for Convalescent Plasma
+		Thank you all for your dedication to Westchester.  I want to thank everyone that has provided service to this client.  Your efforts have been recognized.
+	</br>
+		For those of you supporting our other clients, I’d like to thank you as well.  We’ve had remarkable success at San Mateo and Weirton as we worked with the teams to respond to all Covid request.  As a team, CAS completed over 100 Covid-19 SRs coming in at 100% client sat.
+	</br>
+		Great job everyone. 
+	</p>
+</div>
+<div class="info">
+	<p>
+		Excerpt from CIO/CHIO at Westchester Hospital (CAS items Bolded)
+	</br>
+		Subject: A Sincere Thank You
+	</br>
+		To Members of the Information Technology Team at Westchester Medical Center, both Steven and I would like to share our gratitude for the teamwork demonstrated in response to the recent COVID-19 epidemic.  Your dedication and efforts on behalf of our very hard-hit communities are a testament to your commitment and compassion.  We have compiled a list of your most impactful individual and team accomplishments in hopes that you’ll reach out to your IT coworkers to thank and congratulate them.
+	</br>
+		We also want you to reach out to express gratitude to our partners in the clinical, financial, and administrative areas whose cooperation was critical to our shared success on behalf of the patients, their families, and our communities. We certainly admire their courage and heroic efforts in these unprecedented times.
+	</br>
+		There were numerous accounts of personal efforts, too many to list here.  Instead, what follows is an illustrative, not comprehensive list of notable team accomplishments.
+	</p>
+</div>
+								
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Awards</h2>
+								
+<div class="image-container">
+	<div class="text">AWARDS</div>
+  </div>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!--<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>-->
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

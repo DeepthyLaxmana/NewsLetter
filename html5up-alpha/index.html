@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alpha by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+			var slideIndex = 2;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  var captionText = document.getElementById("caption");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+			</script>
+<style>
+	
+	
+	* {
+	  box-sizing: border-box;
+	}
+	
+	img {
+	  vertical-align: middle;
+	}
+	
+	/* Position the image container (needed to position the left and right arrows) */
+	.containerimg {
+	  position: relative;
+	}
+	
+	/* Hide the images by default */
+	.mySlides {
+	  display: none;
+	}
+	
+	/* Add a pointer when hovering over the thumbnail images */
+	.cursor {
+	  cursor: pointer;
+	}
+	
+	/* Next & previous buttons */
+	.prev,
+	.next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 40%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 20px;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  -webkit-user-select: none;
+	}
+	
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* Position the "next button" to the left */
+	.prev {
+	  left: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+	
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+	  background-color: rgba(0, 0, 0, 0.8);
+	}
+	
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* Container for image text */
+	.caption-containerimg {
+	  text-align: center;
+	  background-color:white;
+	  padding: 2px 16px;
+	  color: white;
+	}
+	
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	
+	/* Six columns side by side */
+	.column {
+	  float: left;
+	  width: 16.66%;
+	}
+	
+	/* Add a transparency effect for thumnbail images */
+	.demo {
+	  opacity: 0.6;
+	}
+	
+	.active,
+	.demo:hover {
+	  opacity: 1;
+	}
+	</style>
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">AMS & SWx</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">In the News</a></li>
+							<li><a href="index.html#SS">Success Stories</a></li>
+							<li><a href="index.html#Plans">2020 Plans</a></li>
+							<li><a href="index.html#SCards">Scorecards</a></li>
+							<li><a href="index.html#CV">Cernerversary</a></li>
+							<li><a href="index.html">Celebrating the Wins</a></li>							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>Newsletter</h2>
+					<p>2020 Q2 AMS & SWx</p>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<section class="box special">
+						<header class="major">
+							<h2>In the News</h2>
+							<p>
+								
+We started a new chapter in BLR AMS-SWx with addition of Client Operations team, with our first wave of Support Integration Architects. Please join me in welcoming the team and wishing them all the best.
+						</br>
+SIA team started operations from July/6th and are working in collaboration with Client Operations team in WHQ. This team will primarily support clients in the USA.
+							</p>
+						</header>
+						<span class="image featured"><img src="images/InTheNews.jpg" alt="" /></span>
+					</section>
+					<section id="SS" class="box special">
+						<header class="major">
+							<h2>Success Stories</h2>
+						</header>
+						<section class="box">
+						<p><span class="image right"><img style="height:300px;" src="images/SS1.jpg" alt="" /></span>
+							“Happiness can be found in the darkest of times, only if one remembers to switch on the light.” And I guess this quote surely summarizes my philosophy of life.
+							</br>
+								Having grown up in Kanpur, I was an extremely introverted person (I have become more of an ambivert now). When I enrolled in VIT, Vellore for my bachelor’s is when my perception towards life changed. That’s when I came out of the cocoon.
+							</br>
+								Before Cerner, I interned for an Oil and Gas Business Analysis company, and Cerner came to me at a time when frankly, I didn’t have much to look forward to. I joined Cerner in 2015 as a Delivery Consultant for AMS. We were the first batch of consultants hired for AMS to work US 2-11 full time. I started working with Pathnet and soon my interest peeked understanding the kind of work we do and what impact it has on society. This motivated me to give in my all to the work I did, and Cerner never failed to notice and appreciate me for my dedication and efforts. In a short span of close to 3 years, I started managing a team of engineers in AMS/SWx. Being a lead wasn’t easy at first. But seeing the zeal and dedication in the eyes of the associates I work with daily, I realized I need to buckle up to be the best version of myself, not just for my associates but even for my own self. My mantra that I always tell and share with my associates is the same that I applied for me when I worked on issues. The issues we resolve for the clients, impact people directly. So, we are the background heroes that enable healthcare givers to do their job effectively.
+							</br>
+								During my college, I was a part of an NGO called – Make a Difference (MAD), which deals with underprivileged kids. Once I came to Bangalore and my life stabilized a bit, I joined MAD again and volunteered there as an English teacher as well as a Mentor for new teachers teaching them the tips and tricks on how to deal with kids. MAD taught me empathy and patience which I apply day to day in my life here at Cerner as well. Along with this, in my free time, I am a huge movie buff. I write reviews on Instagram and manage a page called “Chai and Reviews”. Do go and read it if you get time.
+							
+						</section>
+					</section>
+						
+					<section id="Plans" class="box special">
+						<header class="major">
+							<h2>2020 Plans</h2>
+							
+						</header>
+
+						
+
+						<div class="containerimg">
+							<div class="mySlides">
+							  <div class="numbertext">1 / 3</div>
+							  <img src="images/Plan1.png" style="width:100%;height:300px;">
+							</div>
+						  
+							<div class="mySlides">
+							  <div class="numbertext">2 / 3</div>
+							  <img src="images/Plan2.png" style="width:100%;height:300px;">
+							</div>
+						  
+							<div class="mySlides">
+							  <div class="numbertext">3 / 3</div>
+							  <img src="images/Plan3.png" style="width:100%;height:300px;">
+							</div>
+							  
+							<a class="prev" onclick="plusSlides(-1)">❮</a>
+							<a class="next" onclick="plusSlides(1)">❯</a>
+						  
+							<div class="caption-containerimg">
+							  <p id="caption"></p>
+							</div>
+						  
+							<div class="row">
+							  <div class="column">
+								<img class="demo cursor" src="images/Plan1.png" style="width:100%" onclick="currentSlide(1)" alt="<b>Bangalore Incident management - 2020 Focus Area<b>">
+							  </div>
+							  <div class="column">
+								<img class="demo cursor" src="images/Plan2.png" style="width:100%" onclick="currentSlide(2)" alt="<b><i>Change</i> the Change - 2020 Focus Area</b>">
+							  </div>
+							  <div class="column">
+								<img class="demo cursor" src="images/Plan3.png" style="width:100%;" onclick="currentSlide(3)" alt="<b>Monitoring the CoE - 2020 Focus Area</b>">
+							  </div>
+							</div>
+						  </div>
+
+						</section>
+						<section id="SCards" class="box special">
+							<header class="major">
+								<h2>Scorecard</h2>
+								
+							<span class="image featured"><img src="images/SC.png" alt="" /></span>
+						</section>
+						<section id="CV" class="box special">
+							<header class="major">
+								<h2>Cernerversary</h2>
+								
+							<span class="image featured"><img src="images/SV.png" alt="" /></span>
+						</section>
+					<!--<section class="box special features">
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-bolt accent2"></span>
+								<h3>Magna etiam</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-chart-area accent3"></span>
+								<h3>Ipsum dolor</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-cloud accent4"></span>
+								<h3>Sed feugiat</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-lock accent5"></span>
+								<h3>Enim phasellus</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+						</div>
+					</section>
+					
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+								<h3>Sed lorem adipiscing</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+								<h3>Accumsan integer</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+				</section>-->
+
+			<!-- CTA -->
+				<!--<section id="cta">
+
+					
+					<p>&nbsp;</p>
+
+					<form>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>-->
+
+			<!-- Footer -->
+				<footer id="footer"></footer>
+				<!--	<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>-->
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
