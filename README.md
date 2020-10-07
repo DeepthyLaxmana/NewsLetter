@@ -1,2 +1,2 @@
 # NewsLetter
-Newsletter Templates
+Newsletter Templates Repository.
